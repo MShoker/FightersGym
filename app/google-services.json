@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "442177918136",
+    "firebase_url": "https://fightersgym-296dd.firebaseio.com",
+    "project_id": "fightersgym-296dd",
+    "storage_bucket": "fightersgym-296dd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:442177918136:android:1f8118d2d8c7612270104d",
+        "android_client_info": {
+          "package_name": "com.shoker.fightersgym"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "442177918136-1mstth84efbuljbce777bgvf9k4helnp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.shoker.fightersgym",
+            "certificate_hash": "114e8d940ae33edfe62defd663f868e099a013d9"
+          }
+        },
+        {
+          "client_id": "442177918136-jblqgr2phr6mq1iie9qm3h46jeijj91q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBrQPfSoss9swppyMMKAvH34Yo76SU-2Ns"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "442177918136-jblqgr2phr6mq1iie9qm3h46jeijj91q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

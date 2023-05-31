@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/gym1"
+        android:scaleType="fitXY"
+        android:alpha="0.7"/>
+        <GridLayout
+            android:id="@+id/mainGrid"
+            android:columnCount="2"
+            android:rowCount="3"
+            android:alignmentMode="alignMargins"
+            android:columnOrderPreserved="false"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:padding="14dp"
+            >
+
+            <!-- Row 1 -->
+
+            <!-- Column 1 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_marginBottom="@dimen/eightdb"
+                android:layout_marginLeft="@dimen/eightdb"
+                android:layout_marginRight="@dimen/fourdb"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="8dp"
+                app:cardBackgroundColor="@android:color/transparent"
+                android:backgroundTint="@color/card_main"
+                android:backgroundTintMode="src_over"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:onClick="videos">
+                    <ImageView
+                        android:id="@+id/iv_videos"
+                        android:src="@drawable/videos"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/iv_videos"
+                        android:layout_centerHorizontal="true"
+                        android:text="Videos"
+                        android:textSize="23sp"
+                        android:textColor="@color/main_theme"
+                        android:textStyle="bold"/>
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- Column 2 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_marginBottom="@dimen/eightdb"
+                android:layout_marginLeft="@dimen/fourdb"
+                android:layout_marginRight="@dimen/eightdb"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="8dp"
+                app:cardBackgroundColor="@android:color/transparent"
+                android:backgroundTint="@color/card_main"
+                android:backgroundTintMode="src_over"
+                >
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:onClick="info">
+                    <ImageView
+                        android:id="@+id/iv_info"
+                        android:src="@drawable/info"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/iv_info"
+                        android:layout_centerHorizontal="true"
+                        android:text="Gym info"
+                        android:textSize="23sp"
+                        android:textColor="@color/main_theme"
+                        android:textStyle="bold"/>
+                </RelativeLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!-- Row 2 -->
+
+            <!-- Column 1 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_marginBottom="@dimen/eightdb"
+                android:layout_marginLeft="@dimen/fourdb"
+                android:layout_marginRight="@dimen/eightdb"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="8dp"
+                app:cardBackgroundColor="@android:color/transparent"
+                android:backgroundTint="@color/card_main"
+                android:backgroundTintMode="src_over"
+                >
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:onClick="classes">
+                    <ImageView
+                        android:id="@+id/iv_class"
+                        android:src="@drawable/calander"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/iv_class"
+                        android:layout_centerHorizontal="true"
+                        android:text="Find Class"
+                        android:textSize="23sp"
+                        android:textColor="@color/main_theme"
+                        android:textStyle="bold"/>
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- Column 2 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_marginBottom="@dimen/eightdb"
+                android:layout_marginLeft="@dimen/fourdb"
+                android:layout_marginRight="@dimen/eightdb"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="8dp"
+                app:cardBackgroundColor="@android:color/transparent"
+                android:backgroundTint="@color/card_main"
+                android:backgroundTintMode="src_over"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:onClick="social">
+                    <ImageView
+                        android:id="@+id/iv_socialmedia"
+                        android:src="@drawable/socialmedia"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/iv_socialmedia"
+                        android:layout_centerHorizontal="true"
+                        android:text="Social Media"
+                        android:textSize="23sp"
+                        android:textColor="@color/main_theme"
+                        android:textStyle="bold"/>
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- Row 2 -->
+
+            <!-- Column 1 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_marginBottom="@dimen/eightdb"
+                android:layout_marginLeft="@dimen/eightdb"
+                android:layout_marginRight="@dimen/fourdb"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="8dp"
+                app:cardBackgroundColor="@android:color/transparent"
+                android:backgroundTint="@color/card_main"
+                android:backgroundTintMode="src_over"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:onClick="offer">
+                    <ImageView
+                        android:id="@+id/iv_offers"
+                        android:src="@drawable/sale"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/iv_offers"
+                        android:layout_centerHorizontal="true"
+                        android:text="Offers"
+                        android:textSize="23sp"
+                        android:textColor="@color/main_theme"
+                        android:textStyle="bold"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Column 3 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_marginBottom="@dimen/eightdb"
+                android:layout_marginLeft="@dimen/fourdb"
+                android:layout_marginRight="@dimen/eightdb"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="8dp"
+                app:cardBackgroundColor="@android:color/transparent"
+                android:backgroundTint="@color/card_main"
+                android:backgroundTintMode="src_over"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:onClick="schedule">
+                    <ImageView
+                        android:id="@+id/iv_schedual"
+                        android:src="@drawable/schedual"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/iv_schedual"
+                        android:layout_centerHorizontal="true"
+                        android:text="Your Traning"
+                        android:textSize="23sp"
+                        android:textColor="@color/main_theme"
+                        android:textStyle="bold"/>
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+        </GridLayout>
+
+    </RelativeLayout>

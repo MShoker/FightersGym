@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ClassesActivity"
+    android:background="#DAD8D8">
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/lv_classes"
+        android:layout_marginTop="@dimen/eightdb"
+        android:layout_marginBottom="@dimen/eightdb"
+        android:layout_marginLeft="@dimen/eightdb"
+        android:layout_marginRight="@dimen/eightdb"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="10.0sp"
+        />
+    <ProgressBar
+        android:id="@+id/progressbar_classes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:indeterminateDrawable="@drawable/progress"/>
+    <TextView
+        android:id="@+id/tv_internet_error_classes"
+        android:layout_margin="@dimen/fourdb"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        android:text="@string/error_internet"/>
+
+</RelativeLayout>

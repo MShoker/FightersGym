@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="105dp"
+    android:layout_marginLeft="@dimen/twilve"
+    android:layout_marginRight="@dimen/twilve"
+    app:cardElevation="@dimen/fourdb"
+    app:cardCornerRadius="8dp"
+    app:cardBackgroundColor="@android:color/transparent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/iv_exercise_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginRight="8dp"
+        android:scaleType="centerInside" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:layout_toLeftOf="@+id/cb_exercise"
+        android:layout_toRightOf="@+id/iv_exercise_image" >
+        <TextView
+            android:id="@+id/tv_exercise_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:layout_marginTop="@dimen/twilve"
+            android:text="Contact Name"
+            android:textColor="#000"
+            android:textIsSelectable="false"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_exercise_muscle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_exercise_name"
+            android:layout_marginTop="25dp"
+            android:singleLine="true"
+            android:text="09876543210"
+            android:textColor="@color/colorPrimary"
+            android:textIsSelectable="false"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:id="@+id/tv_exercise_equipment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_alignParentEnd="true"
+            android:singleLine="true"
+            android:layout_below="@+id/tv_exercise_name"
+            android:layout_marginTop="25dp"
+            android:text="09876543210"
+            android:textColor="@color/colorPrimary"
+            android:textIsSelectable="false"
+            android:textSize="16sp" />
+    </RelativeLayout>
+    <CheckBox
+        android:id="@+id/cb_exercise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"/>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

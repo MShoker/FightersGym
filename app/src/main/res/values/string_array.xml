@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="spinner_muscle">
+        <item>Any Muscle</item>
+        <item>Back</item>
+        <item>Biceps</item>
+        <item>Chest</item>
+        <item>Core</item>
+        <item>Forearms</item>
+        <item>Legs</item>
+        <item>Shoulders</item>
+        <item>Triceps</item>
+    </string-array>
+
+    <string-array name="spinner_equipment">
+        <item>Any Equipment</item>
+        <item>Band</item>
+        <item>Barbell</item>
+        <item>Body Weight</item>
+        <item>Cable</item>
+        <item>Dumbbell</item>
+        <item>Leverage machine</item>
+        <item>Stability Ball</item>
+        <item>Weighted</item>
+        <item>Medicine Ball</item>
+        <item>Bosu Ball</item>
+
+
+    </string-array>
+</resources>

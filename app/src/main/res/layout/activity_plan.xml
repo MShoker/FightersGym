@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlanActivity"
+    android:background="@color/main_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/eightdb"
+        android:layout_marginTop="@dimen/fourdb"
+        android:layout_marginRight="@dimen/eightdb"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/layout_buttons">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/button_size"
+                    android:text="Save"
+                    android:background="@drawable/button_background"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_marginBottom="@dimen/fourdb"
+                    android:onClick="save"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/button_size"
+                    android:text="Cancel"
+                    android:background="@drawable/cancel_button_background"
+                    android:textColor="@color/colorPrimary"
+                    android:onClick="cancel"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_toLeftOf="@+id/layout_buttons">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/build_plan"
+                android:textColor="#000000"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/name"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+                <EditText
+                    android:id="@+id/et_plan_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/enter_name"/>
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_calendar"
+                android:layout_alignParentRight="true"
+                android:id="@+id/iv_plane_date"
+                android:onClick="selectDate"
+                android:background="@android:color/white"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_plan_date"
+                android:layout_toLeftOf="@id/iv_plane_date"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_clock"
+                android:layout_alignParentRight="true"
+                android:id="@+id/iv_plane_time"
+                android:onClick="selectTime"
+                android:background="@android:color/white"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_plan_time"
+                android:layout_toLeftOf="@id/iv_plane_time"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="2">
+
+    <Spinner
+        android:layout_margin="@dimen/fourdb"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/sp_plan_muscle"
+        android:layout_weight="1"
+        android:background="@drawable/spinner_background"/>
+    <Spinner
+        android:layout_margin="@dimen/fourdb"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/sp_plan_equipment"
+        android:layout_weight="1"
+        android:background="@drawable/spinner_background"/>
+</LinearLayout>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/lv_plan"
+        android:dividerHeight="7sp"
+         />
+    </LinearLayout>
+</RelativeLayout>
